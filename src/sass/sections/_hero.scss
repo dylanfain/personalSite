@@ -48,6 +48,52 @@
     @include respond(phone-xs) {
       font-size: 2.8rem;
     }
+    .roles-container{
+      display: flex;
+    }
+    .slider{
+      margin-left: 12px;
+      margin-right: 9px;
+      height: 50px;
+      overflow: hidden;
+    }
+    
+    .slide{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px 15px;
+      text-align: center;
+      height: 50px;
+      margin-bottom: 50px;
+      color: white;
+    }
+    
+    .slide-anim{
+      animation: slide 10s linear infinite;
+    }
+    
+    .slide1 {
+      background-color: #00cdac;
+    }
+    
+    .slide2 {
+      background-color: #00cdac;
+    }
+    
+    .slide3 {
+      background-color: #00cdac;
+    }
+    
+    @keyframes slide {
+      0% { transform: translateY(-300px); }
+      23% { transform: translateY(-300px); }
+      33% { transform: translateY(-200px); }
+      56% { transform: translateY(-200px); }
+      66% { transform: translateY(-100px); }
+      90% { transform: translateY(-100px); }
+      100% { transform: translateY(0px); }
+    }
   }
 
   .hero-cta {

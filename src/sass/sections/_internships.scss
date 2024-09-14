@@ -1,0 +1,69 @@
+/* Dotted line separator */
+.separator-line {
+    width: 100%; /* Full width of the page */
+    height: 3px; /* Height of the line */
+    margin-bottom: 50px; /* Space above and below the line */
+    background: linear-gradient(to right, #007BFF 50%, transparent 50%) repeat-x; /* Blue dots */
+    background-size: 10px 3px; /* Define size of the dots */
+    animation: moveDots 4s linear infinite; /* Slower animation */
+  }
+  
+  /* Keyframes for moving dots */
+  @keyframes moveDots {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100px 0; /* Move dots horizontally */
+    }
+  }
+
+// #internship-section{
+//     margin-bottom: 500px;
+// }
+
+img{
+    margin-bottom: 10px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%; /* Circular buttons */
+    font-size: 24px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  }
+  
+  .prev {
+    left: 10px; /* Position the left button */
+  }
+  
+  .next {
+    right: 10px; /* Position the right button */
+  }
+  
