@@ -19,6 +19,9 @@
   }
 
   .about-wrapper {
+    #profile-img{
+      border-radius: 10%;
+    }
     @include respond(phone) {
       padding-bottom: 5rem;
     }
